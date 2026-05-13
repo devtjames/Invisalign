@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Smile Assessment | Invisalign Candidate Quiz</title>
+  <meta name="description" content="Take a multi-step Invisalign smile assessment with candidate qualification, lead capture, and consultation CTA.">
+  <meta property="og:title" content="Free Invisalign Smile Assessment">
+  <meta property="og:description" content="Find out whether Invisalign may work for your smile goals.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Smile Assessment"}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/quiz.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="site-shell grid gap-10 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
+        <div>
+          <p class="page-kicker">2-minute quiz</p>
+          <h1 class="section-title mt-4">Find out if Invisalign fits your smile.</h1>
+          <p class="section-copy mt-5">This guided assessment captures goals, complexity, and contact details before routing qualified patients to booking.</p>
+        </div>
+        <div class="lux-card p-5 md:p-7" data-quiz>
+          <div class="h-2 overflow-hidden rounded-full bg-slate-100"><div class="h-full rounded-full bg-teal-600" data-quiz-progress></div></div>
+          <div class="mt-7 quiz-step is-active" data-step="crowding">
+            <h2 class="text-2xl font-black">What would you most like to improve?</h2>
+            <div class="mt-5 grid gap-3">
+              <button class="choice-card" type="button" data-choice="crowding"><strong>Crowding</strong><span class="text-slate-600">Teeth overlap or feel tight.</span></button>
+              <button class="choice-card" type="button" data-choice="spacing"><strong>Spacing</strong><span class="text-slate-600">Gaps or uneven spacing.</span></button>
+              <button class="choice-card" type="button" data-choice="touchup"><strong>Small touch-up</strong><span class="text-slate-600">Minor relapse after previous treatment.</span></button>
+            </div>
+          </div>
+          <div class="mt-7 quiz-step" data-step="bite">
+            <h2 class="text-2xl font-black">Do you notice bite issues?</h2>
+            <div class="mt-5 grid gap-3">
+              <button class="choice-card" type="button" data-choice="overbite"><strong>Overbite or deep bite</strong><span class="text-slate-600">Top teeth cover too much.</span></button>
+              <button class="choice-card" type="button" data-choice="crossbite"><strong>Crossbite</strong><span class="text-slate-600">Some teeth bite inside/outside.</span></button>
+              <button class="choice-card" type="button" data-choice="none"><strong>Not sure</strong><span class="text-slate-600">I mainly care about appearance.</span></button>
+            </div>
+          </div>
+          <div class="mt-7 quiz-step" data-step="timeline">
+            <h2 class="text-2xl font-black">When would you like to start?</h2>
+            <div class="mt-5 grid gap-3">
+              <button class="choice-card" type="button" data-choice="now"><strong>This month</strong><span class="text-slate-600">Ready for a scan.</span></button>
+              <button class="choice-card" type="button" data-choice="soon"><strong>1 to 3 months</strong><span class="text-slate-600">Researching cost and timing.</span></button>
+              <button class="choice-card" type="button" data-choice="later"><strong>Later</strong><span class="text-slate-600">Just exploring options.</span></button>
+            </div>
+          </div>
+          <div class="mt-7 quiz-step" data-step="lead">
+            <h2 class="text-2xl font-black">Where should we send your estimate?</h2>
+            <div class="mt-5 grid gap-3 sm:grid-cols-2">
+              <input class="form-field" placeholder="First name" aria-label="First name">
+              <input class="form-field" type="email" placeholder="Email address" aria-label="Email address">
+              <input class="form-field sm:col-span-2" type="tel" placeholder="Phone number" aria-label="Phone number">
+            </div>
+          </div>
+          <div class="mt-6" data-quiz-result></div>
+          <div class="mt-7 flex items-center justify-between gap-3">
+            <button class="btn btn-secondary" type="button" data-quiz-prev>Back</button>
+            <button class="btn btn-primary" type="button" data-quiz-next>Continue</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

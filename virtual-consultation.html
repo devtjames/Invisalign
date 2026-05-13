@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Invisalign Consultation | Upload Smile Photos</title>
+  <meta name="description" content="Virtual Invisalign consultation page with smile photo uploads, remote eligibility form, and AI simulation placeholder.">
+  <meta property="og:title" content="Virtual Invisalign Consultation">
+  <meta property="og:description" content="Upload smile photos and receive remote eligibility guidance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalWebPage","name":"Virtual Invisalign consultation"}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="site-shell grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p class="page-kicker">Remote eligibility</p>
+          <h1 class="section-title mt-4">Start your Invisalign consult from home.</h1>
+          <p class="section-copy mt-5">Upload smile photos, share goals, and receive a preliminary review before visiting for a scan.</p>
+        </div>
+        <div class="hero-media"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1100&q=80" alt="Patient using laptop for virtual consultation"></div>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="site-shell grid gap-8 lg:grid-cols-[1fr_.9fr]">
+        <form class="lux-card p-6">
+          <h2 class="text-2xl font-black">Upload smile photos</h2>
+          <p class="mt-2 text-slate-600">Front smile, left bite, right bite, upper arch, and lower arch.</p>
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <input class="form-field" placeholder="First name" aria-label="First name">
+            <input class="form-field" type="email" placeholder="Email" aria-label="Email">
+            <input class="form-field sm:col-span-2" type="file" multiple aria-label="Upload smile photos">
+            <select class="form-field sm:col-span-2" aria-label="Main smile goal"><option>Straighter front teeth</option><option>Close spaces</option><option>Fix bite</option><option>Teen Invisalign</option></select>
+            <textarea class="form-field sm:col-span-2" rows="4" placeholder="Tell us what you want to improve" aria-label="Smile goals"></textarea>
+          </div>
+          <button class="btn btn-primary mt-5" type="button">Submit virtual consult</button>
+        </form>
+        <aside class="grid gap-5">
+          <div class="lux-card p-6"><p class="page-kicker">AI simulation placeholder</p><div class="mt-4 grid aspect-video place-items-center rounded-3xl bg-cyan-50 text-center font-black text-slate-600">Smile preview module<br>Connect imaging API here</div></div>
+          <div class="lux-card p-6"><h2 class="text-xl font-black">What happens next?</h2><div class="mt-3 grid gap-2 text-slate-600"><p>1. Team reviews photos.</p><p>2. You receive candidacy guidance.</p><p>3. Qualified patients book a scan.</p></div></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

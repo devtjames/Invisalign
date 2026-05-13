@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invisalign Financing | Payment Plans, BNPL, Insurance Checker</title>
+  <meta name="description" content="Flexible Invisalign financing page with monthly plans, BNPL framing, insurance checker, calculator, and FAQs.">
+  <meta property="og:title" content="Invisalign Financing Options">
+  <meta property="og:description" content="Flexible monthly plans, insurance checks, and payment support for Invisalign treatment.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialProduct","name":"Invisalign financing"}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="site-shell grid gap-10 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p class="page-kicker">Flexible payment plans</p>
+          <h1 class="section-title mt-4">Make the smile plan feel possible.</h1>
+          <p class="section-copy mt-5">A financing page that handles objections before they reach the consultation form.</p>
+          <a class="btn btn-primary mt-7" href="book-consultation.html">Check my options</a>
+        </div>
+        <div class="hero-media"><img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1100&q=80" alt="Financing paperwork and payment planning"></div>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="site-shell grid gap-5 md:grid-cols-3">
+        <div class="lux-card p-6"><h2 class="text-xl font-black">Low monthly plans</h2><p class="mt-2 text-slate-600">Offer 12, 24, and 36 month terms with friendly estimated ranges.</p></div>
+        <div class="lux-card p-6"><h2 class="text-xl font-black">BNPL partners</h2><p class="mt-2 text-slate-600">Frame pre-approval as fast, private, and available before the clinical quote.</p></div>
+        <div class="lux-card p-6"><h2 class="text-xl font-black">FSA and HSA</h2><p class="mt-2 text-slate-600">Remind patients they may use eligible pre-tax healthcare funds.</p></div>
+      </div>
+    </section>
+
+    <section class="section bg-[#eef9fb]">
+      <div class="site-shell grid gap-8 lg:grid-cols-2">
+        <div class="lux-card p-6" data-payment-calc>
+          <h2 class="text-2xl font-black">Payment estimator</h2>
+          <input class="form-field mt-5" type="number" value="5200" data-cost aria-label="Treatment cost">
+          <input class="form-field mt-3" type="number" value="1000" data-down aria-label="Down payment">
+          <select class="form-field mt-3" data-months aria-label="Financing term"><option value="12">12 months</option><option value="24" selected>24 months</option><option value="36">36 months</option></select>
+          <div class="mt-5 rounded-3xl bg-white p-5"><p class="text-sm font-black uppercase tracking-[0.16em] text-teal-700">Estimated</p><p class="text-4xl font-black" data-payment-output></p></div>
+        </div>
+        <form class="lux-card p-6">
+          <h2 class="text-2xl font-black">Insurance checker</h2>
+          <div class="mt-5 grid gap-3">
+            <input class="form-field" placeholder="Full name" aria-label="Full name">
+            <input class="form-field" placeholder="Insurance provider" aria-label="Insurance provider">
+            <input class="form-field" placeholder="Member ID" aria-label="Member ID">
+            <button class="btn btn-primary" type="button">Request benefits review</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="site-shell grid gap-8 lg:grid-cols-[.8fr_1.2fr]">
+        <div><p class="page-kicker">Financing FAQs</p><h2 class="section-title mt-4">Reduce price anxiety early.</h2></div>
+        <div class="grid gap-4">
+          <div class="faq-item lux-card is-open p-5" data-faq-item><button class="flex w-full justify-between text-left font-black" data-faq-button>Can I apply before my consult?<span class="faq-icon">+</span></button><div class="faq-panel"><p class="pt-2 text-slate-600">Yes, many clinics allow soft pre-qualification before the final treatment quote.</p></div></div>
+          <div class="faq-item lux-card p-5" data-faq-item><button class="flex w-full justify-between text-left font-black" data-faq-button>Does insurance cover Invisalign?<span class="faq-icon">+</span></button><div class="faq-panel"><p class="pt-2 text-slate-600">Some plans include orthodontic benefits. The template includes a checker to capture benefit details.</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>

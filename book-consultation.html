@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Invisalign Consultation | Calendar, Dentist, Deposit UI</title>
+  <meta name="description" content="Consultation booking page with dentist selection, date and time slots, visit type, patient form, and deposit UI.">
+  <meta property="og:title" content="Book an Invisalign Consultation">
+  <meta property="og:description" content="Choose a doctor, date, time, and consultation type.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ReserveAction","name":"Book Invisalign consultation"}</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/booking.js"></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <section class="page-hero">
+      <div class="site-shell max-w-4xl">
+        <p class="page-kicker">Booking</p>
+        <h1 class="section-title mt-4">Schedule the scan that makes the plan real.</h1>
+        <p class="section-copy mt-5">A mobile-first scheduler UI with doctor selection, time slots, lead capture, and refundable deposit framing.</p>
+      </div>
+    </section>
+
+    <section class="section bg-white">
+      <div class="site-shell grid gap-8 lg:grid-cols-[1.05fr_.95fr]" data-booking>
+        <form class="lux-card p-6">
+          <h2 class="text-2xl font-black">Choose appointment</h2>
+          <div class="mt-5 grid gap-3 sm:grid-cols-2">
+            <select class="form-field" data-dentist aria-label="Select dentist"><option>Dr. Elena Park</option><option>Dr. Miles Grant</option><option>First available</option></select>
+            <select class="form-field" data-visit-type aria-label="Visit type"><option>In-studio scan</option><option>Virtual consultation</option><option>Teen Invisalign consult</option></select>
+            <input class="form-field sm:col-span-2" type="date" data-date aria-label="Consultation date">
+          </div>
+          <h3 class="mt-6 font-black">Available times</h3>
+          <div class="mt-3 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            <button class="slot-button btn btn-secondary is-selected" type="button" data-slot="9:00 AM">9:00</button>
+            <button class="slot-button btn btn-secondary" type="button" data-slot="10:30 AM">10:30</button>
+            <button class="slot-button btn btn-secondary" type="button" data-slot="1:00 PM">1:00</button>
+            <button class="slot-button btn btn-secondary" type="button" data-slot="3:30 PM">3:30</button>
+          </div>
+          <h3 class="mt-6 font-black">Patient details</h3>
+          <div class="mt-3 grid gap-3 sm:grid-cols-2">
+            <input class="form-field" placeholder="First name" aria-label="First name">
+            <input class="form-field" placeholder="Last name" aria-label="Last name">
+            <input class="form-field" type="email" placeholder="Email" aria-label="Email">
+            <input class="form-field" type="tel" placeholder="Phone" aria-label="Phone">
+          </div>
+        </form>
+        <aside class="grid gap-5">
+          <div class="lux-card p-6" data-booking-summary></div>
+          <div class="lux-card p-6">
+            <p class="page-kicker">Deposit</p>
+            <h2 class="mt-3 text-3xl font-black">$49 today</h2>
+            <p class="mt-2 text-slate-600">Refundable or credited toward treatment. Replace with your payment integration.</p>
+            <button class="btn btn-primary mt-5 w-full" type="button">Reserve appointment</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+</body>
+</html>
